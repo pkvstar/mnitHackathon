@@ -1,10 +1,35 @@
 :root {
-  --color-orange: #feab5e;
+  /* Original colors for reference */
+  /* --color-orange: #feab5e;
   --color-light-orange: #fcbf87;
   --color-grey: #707070;
   --color-border-orange: #ffead7;
   --color-green: #198754;
-  --color-red: #dc3545;
+  --color-red: #dc3545; */
+
+  /* Modern Color Theme Option 1 - Blue/Purple Theme */
+  --color-orange: #4A90E2;  /* Primary blue */
+  --color-light-orange: #6BA4E9; /* Lighter blue */
+  --color-grey: #6B7C93; /* Muted blue-grey */
+  --color-border-orange: #EDF2F7; /* Very light blue-grey */
+  --color-green: #10B981; /* Modern green */
+  --color-red: #EF4444; /* Modern red */
+
+  /* Modern Color Theme Option 2 - Purple/Indigo Theme */
+  /* --color-orange: #6366F1;  Primary indigo */
+  /* --color-light-orange: #818CF8; Lighter indigo */
+  /* --color-grey: #6B7280; Muted grey */
+  /* --color-border-orange: #EEF2FF; Very light indigo */
+  /* --color-green: #10B981; Modern green */
+  /* --color-red: #EF4444; Modern red */
+
+  /* Modern Color Theme Option 3 - Teal Theme */
+  /* --color-orange: #0D9488;  Primary teal */
+  /* --color-light-orange: #14B8A6; Lighter teal */
+  /* --color-grey: #64748B; Muted grey */
+  /* --color-border-orange: #F0FDFA; Very light teal */
+  /* --color-green: #10B981; Modern green */
+  /* --color-red: #EF4444; Modern red */
 }
 
 .container {
@@ -71,51 +96,202 @@
 }
 .Nav {
   width: 100%;
-  background-color: var(--color-orange);
+  background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-light-orange) 100%);
   position: sticky;
   top: 0px;
   z-index: 2;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
+
+.Nav.scrolled {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Nav .logo a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Nav .work {
+  color: white;
+  font-weight: 800;
+}
+
+.Nav .wonders {
+  color: var(--color-border-orange);
+  font-weight: 600;
+}
+
+.Nav.scrolled .work {
+  color: var(--color-orange);
+}
+
+.Nav.scrolled .wonders {
+  color: var(--color-grey);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav-link {
+  position: relative;
+  padding: 8px 16px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.sign-in-btn {
+  background-color: white;
+  color: var(--color-orange);
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 10px 32px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; /* Fixed height */
+  min-width: fit-content;
+}
+
+.sign-in-btn a {
+  color: var(--color-orange);
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Nav.scrolled .sign-in-btn {
+  background-color: var(--color-orange);
+}
+
+.Nav.scrolled .sign-in-btn a {
+  color: white;
+}
+
+.sign-in-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img-wrapper {
+  position: relative;
+  padding: 2px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--color-orange), var(--color-light-orange));
+}
+
+.profile-img-wrapper img {
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.profile-img-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.dropdown {
+  transform-origin: top right;
+  transition: all 0.3s ease;
+}
+
+.dropdown .link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown .link i {
+  font-size: 16px;
+  width: 20px;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 105px;
+  height: 80px;
+  padding: 0 20px;
 }
 .logo a {
   text-decoration: none;
   color: white;
   font-size: 35px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
 }
-.menu-logo {
-  display: none;
+.logo a:hover {
+  transform: scale(1.05);
 }
 nav {
   width: 652px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
 }
 nav button {
-  border-radius: 30px;
   background-color: white;
-  padding: 8px 42px;
+  color: var(--color-orange);
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 10px 42px;
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 nav img {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+nav img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 nav .menu {
   position: relative;
 }
 nav .menu .dropdown {
-  background-color: var(--color-orange);
-  border: 1px solid white;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: none;
   position: absolute;
   bottom: -116px;
   z-index: 1;
@@ -123,7 +299,7 @@ nav .menu .dropdown {
   right: -9px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   display: none;
   gap: 5px;
@@ -131,37 +307,53 @@ nav .menu .dropdown {
 nav .menu .dropdown.active {
   display: flex;
   flex-direction: column;
+  animation: dropdownFade 0.3s ease;
+}
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 nav .menu .dropdown .link {
   position: relative;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-orange);
+  padding: 10px 20px;
   width: 100%;
+  transition: all 0.2s ease;
+  border-radius: 5px;
 }
 nav .menu .dropdown .link:hover {
-  color: black;
-}
-nav .menu .dropdown .link:nth-child(1):before {
-  content: "";
-  position: absolute;
-  top: -40px;
-  right: 5px;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  background-color: var(--color-border-orange);
 }
 nav a {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: white;
-  padding: 12px 20px;
-  border-radius: 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  white-space: nowrap;
+}
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 nav button a {
   color: var(--color-orange);
+  padding: 0;
+}
+nav button a:hover {
+  background-color: transparent;
+  transform: none;
 }
 
 @media (max-width: 991px) {
@@ -435,7 +627,7 @@ nav button a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-orange);
+  background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-light-orange) 100%);
   margin-top: 50px;
   padding-bottom: 20px;
 }
@@ -2817,3 +3009,38 @@ nav button a {
   }
 }
 /* End ClientOrders Section */
+
+/* Update nav link colors when scrolled */
+.Nav.scrolled nav a {
+  color: var(--color-orange); /* Change text color to match theme when scrolled */
+}
+
+/* Update hover state for scrolled nav links */
+.Nav.scrolled nav a:hover {
+  background-color: rgba(74, 144, 226, 0.1); /* Subtle hover background using theme color */
+}
+
+/* Update the underline color for nav links when scrolled */
+.Nav.scrolled .nav-link::after {
+  background-color: var(--color-orange); /* Change underline color to match theme */
+}
+
+/* Update hamburger color when scrolled */
+.Nav.scrolled .hamburger .bar {
+  background-color: var(--color-orange);
+}
+
+/* Update dropdown text color when scrolled */
+.Nav.scrolled .dropdown .link {
+  color: var(--color-grey);
+}
+
+/* Update sign-in button colors when scrolled */
+.Nav.scrolled nav button {
+  background-color: var(--color-orange);
+  color: white;
+}
+
+.Nav.scrolled nav button a {
+  color: white;
+}
