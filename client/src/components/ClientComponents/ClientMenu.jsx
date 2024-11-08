@@ -12,7 +12,7 @@ export default function ClientMenu({ active }) {
             <div className={active == "home" ? 'link active' : 'link'}>
                 <a href={`/dashboard/client/${id}`}>
                     <img src={home} alt="Home" />
-                    <div className="linkHeader">
+                    <div className="linkHeader" style={active == "home" ? {color: 'crimson'} : {}}>
                         Home
                     </div>
                 </a>
@@ -20,7 +20,7 @@ export default function ClientMenu({ active }) {
             <div className={active == "freelancers" ? 'link active' : 'link'}>
                 <a href={`/dashboard/client/${id}/services`}>
                     <img src={freelancers} alt="Freelancers" />
-                    <div className="linkHeader">
+                    <div className="linkHeader" style={active == "freelancers" ? {color: 'crimson'} : {}}>
                         Freelancers
                     </div>
                 </a>
@@ -28,7 +28,7 @@ export default function ClientMenu({ active }) {
             <div className={active == "orders" ? 'link active' : 'link'}>
                 <a href={`/dashboard/client/${id}/orders`}>
                     <img src={services} alt="Orders" />
-                    <div className="linkHeader">
+                    <div className="linkHeader" style={active == "orders" ? {color: 'crimson'} : {}}>
                         My Orders
                     </div>
                 </a>
@@ -36,7 +36,7 @@ export default function ClientMenu({ active }) {
             <div className={active == "chat" ? 'link active' : 'link'}>
                 <a href={`/dashboard/client/${id}/chat`}>
                     <img src={chat} alt="Chat" />
-                    <div className="linkHeader">
+                    <div className="linkHeader" style={active == "chat" ? {color: 'crimson'} : {}}>
                         Chat Room
                     </div>
                 </a>
@@ -44,7 +44,7 @@ export default function ClientMenu({ active }) {
             <div className={active == "profile" ? 'link active' : 'link'}>
                 <a href={`/dashboard/client/${id}/profile`}>
                     <img src={settings} alt="Settings" />
-                    <div className="linkHeader">
+                    <div className="linkHeader" style={active == "profile" ? {color: 'crimson'} : {}}>
                         My Profile
                     </div>
                 </a>

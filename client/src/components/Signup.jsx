@@ -144,8 +144,12 @@ export default function Signup() {
             {loading == true && <Loading />}
             <div className="Signup">
                 <div className="container">
-                    <section>
-                        <img src={signup} alt="Sign In Image" />
+                    <section style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        minHeight: 'calc(100vh - 173px)'
+                    }}>
                         <div className="signupForm">
                             <div className="signupHeader">
                                 Create an account

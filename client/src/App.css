@@ -793,52 +793,46 @@ nav button a:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  padding: 2rem;
+  background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
-.Login .loginHeader {
-  margin-bottom: 60px;
-}
-.Login section .loginForm {
+.Login .loginForm {
   width: 500px;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
-.Login section .loginForm .loginHeader {
-  color: var(--color-orange);
-  font-size: 50px;
-}
-.Login section .loginForm .formSection {
-  margin-bottom: 33px;
-}
-.Login section form {
-  text-align: center;
-}
-.Login form label {
-  display: inline-block;
-  color: var(--color-orange);
-  font-weight: bold;
-  width: 100%;
-  text-align: left;
-  font-size: 18px;
-  margin-bottom: 8px;
+.Login .loginHeader {
+  margin-bottom: 40px;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--color-orange), var(--color-light-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .Login input {
   color: var(--color-orange);
   outline: none;
   width: 90%;
   padding: 17px 20px;
-  background-color: var(--color-orange);
+  background-color: white;
   border: 2px solid var(--color-light-orange);
-  color: white;
-  font-size: 20px;
+  color: var(--color-orange);
+  font-size: 16px;
   border-radius: 10px;
   margin-bottom: 25px;
+  transition: all 0.3s ease;
 }
-.Login input:focus::placeholder {
-  opacity: 0;
-  transition: 0.3s;
+.Login input:focus {
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(255,149,0,0.1);
 }
 .Login input::placeholder {
-  color: white;
+  color: #999;
 }
 .Login section button {
   margin-top: 31px;
@@ -846,15 +840,22 @@ nav button a:hover {
   outline: none;
   border: none;
   border-radius: 30px;
-  background-color: var(--color-orange);
+  background: linear-gradient(135deg, var(--color-orange), var(--color-light-orange));
   color: white;
   width: 130px;
   height: 45px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+.Login section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,149,0,0.2);
 }
 .Login .signupSection {
-  width: 100%;
-  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
 }
 .Login section span {
   font-size: 20px;
@@ -968,36 +969,35 @@ nav button a:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-}
-.Signup .signupHeader {
-  margin-bottom: 60px;
-}
-.Signup section .signupForm {
-  width: 630px;
-  display: flex;
-  flex-direction: column;
-}
-.Signup section .signupForm .signupHeader {
-  color: var(--color-orange);
-  font-size: 50px;
-}
-.Signup section .inputs {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 2rem;
+  background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
-.Signup section .signupForm .formsplitsections {
-  width: 250px;
+.Signup .signupForm {
+  width: 800px; /* Increased from 630px */
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem; /* Increased padding */
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
-.Signup section .signupForm .formSection {
-  margin-bottom: 250px;
+
+.Signup .signupHeader {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--color-orange), var(--color-light-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .Signup form label {
   display: inline-block;
   color: var(--color-orange);
-  font-weight: bold;
+  font-weight: 600;
   width: 100%;
   text-align: left;
   margin-bottom: 8px;
@@ -1007,119 +1007,142 @@ nav button a:hover {
   color: var(--color-orange);
   outline: none;
   width: 100%;
-  padding: 17px 20px;
-  background-color: var(--color-orange);
+  padding: 12px 16px; /* Slightly reduced padding */
+  background-color: white;
   border: 2px solid var(--color-light-orange);
-  color: white;
-  font-size: 18px;
+  font-size: 15px; /* Slightly reduced font size */
   border-radius: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Ensures padding is included in width */
 }
-.Signup input:focus::placeholder {
-  opacity: 0;
-  transition: 0.3s;
+
+.Signup input:focus {
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(255,149,0,0.1);
 }
+
 .Signup input::placeholder {
-  color: white;
+  color: #999;
 }
-.Signup form {
-  display: flex;
-  flex-direction: column;
-}
+
 .Signup select {
-  border: 2px solid var(--color-light-orange);
-  font-size: 16px;
-  padding: 16px 20px;
-  outline: none;
-  width: 116%;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  background-color: var(--color-orange);
-  color: white;
-  border-right: 21px solid var(--color-orange);
+  width: 100%;
+  padding: 12px 16px;
+  box-sizing: border-box;
 }
+
+.Signup select:focus {
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(255,149,0,0.1);
+}
+
+.Signup select option {
+  color: var(--color-orange);
+  background: white;
+}
+
+.Signup .image {
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, var(--color-orange), var(--color-light-orange));
+  border: none;
+  width: 100%;
+  padding: 17px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 29px;
+  transition: all 0.3s ease;
+}
+
+.Signup .image:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,149,0,0.2);
+}
+
 .Signup section button {
   cursor: pointer;
   outline: none;
   border: none;
   border-radius: 30px;
-  background-color: var(--color-orange);
+  background: linear-gradient(135deg, var(--color-orange), var(--color-light-orange));
   color: white;
-  width: 115px;
-  height: 40px;
+  width: 130px;
+  height: 45px;
   font-size: 18px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
   align-self: center;
+  margin-top: 2rem;
 }
+
+.Signup section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,149,0,0.2);
+}
+
 .Signup .signupSection {
-  margin-top: 31px;
-  width: 100%;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
   text-align: center;
 }
-.Signup section span {
-  font-size: 20px;
-  margin-right: 62px;
-  color: var(--color-orange);
-}
-.Signup .image {
-  cursor: pointer;
-  color: white;
-  background-color: var(--color-orange);
-  border: 2px solid var(--color-light-orange);
-  width: 100%;
-  padding: 17px 20px;
+
+.Signup .signupSection span {
   font-size: 18px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: 500;
-  margin-top: 29px;
+  color: var(--color-grey);
+  margin-right: 1rem;
 }
-.Signup #image {
-  display: none;
+
+.Signup .inputs {
+  display: flex;
+  gap: 3rem; /* Increased gap between columns */
 }
+
+.Signup .formsplitsections {
+  flex: 1;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
 @media (max-width: 1250px) {
-  .Signup section {
+  .Signup .signupForm {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  .Signup .inputs {
     flex-direction: column;
+    gap: 0;
   }
-  .Signup section .signupHeader {
-    text-align: center;
-  }
-  .Signup section .inputs {
-    align-items: center;
-    flex-direction: column;
-  }
+  
+  .Signup input,
   .Signup select {
-    width: 107%;
-  }
-  .Signup section .signupForm .formsplitsections {
-    width: 630px;
-  }
-}
-@media (max-width: 770px) {
-  .Signup section {
-    width: 90%;
-  }
-  .Signup section img {
     width: 100%;
   }
-  .Signup section .signupForm form {
-    align-items: center;
+}
+
+@media (max-width: 768px) {
+  .Signup .signupForm {
+    padding: 1.5rem;
   }
-  .Signup section .signupForm .formsplitsections {
-    width: 80%;
-  }
-  .Signup section .signupForm {
-    width: 100%;
-  }
-  .Signup .signupSection {
-    text-align: center;
-  }
-  .Signup select {
-    width: 118%;
+  
+  .Signup section {
+    padding: 1rem;
   }
 }
-@media (max-width: 425px) {
-  .Signup section span {
-    margin-right: 0px;
+
+@media (max-width: 576px) {
+  .Signup .signupForm {
+    padding: 1rem;
+  }
+  
+  .Signup input,
+  .Signup select {
+    font-size: 14px;
+    padding: 10px 14px;
   }
 }
 /* End Sign Up Section */

@@ -92,7 +92,25 @@ export default function Home() {
                             <div className="service-headline">Web Developement</div>
                             <div className="service-description">
                                 <div data-aos="fade-right" >
-                                    <img src={webDeveloperService} alt="Web Developer Image" />
+                                    <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="webDevGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style={{stopColor: '#4e54c8'}} />
+                                                <stop offset="100%" style={{stopColor: '#8f94fb'}} />
+                                            </linearGradient>
+                                        </defs>
+                                        <rect x="50" y="50" width="400" height="300" rx="15" fill="url(#webDevGradient)" opacity="0.1"/>
+                                        <rect x="70" y="80" width="360" height="30" rx="5" fill="url(#webDevGradient)" opacity="0.8"/>
+                                        <circle cx="85" cy="95" r="5" fill="url(#webDevGradient)" opacity="0.9"/>
+                                        <circle cx="105" cy="95" r="5" fill="url(#webDevGradient)" opacity="0.9"/>
+                                        <circle cx="125" cy="95" r="5" fill="url(#webDevGradient)" opacity="0.9"/>
+                                        <rect x="70" y="130" width="150" height="200" rx="5" fill="url(#webDevGradient)" opacity="0.4"/>
+                                        <rect x="240" y="130" width="190" height="90" rx="5" fill="url(#webDevGradient)" opacity="0.6"/>
+                                        <rect x="240" y="240" width="190" height="90" rx="5" fill="url(#webDevGradient)" opacity="0.6"/>
+                                        <rect x="85" y="150" width="120" height="10" rx="2" fill="url(#webDevGradient)" opacity="0.9"/>
+                                        <rect x="85" y="170" width="100" height="10" rx="2" fill="url(#webDevGradient)" opacity="0.7"/>
+                                        <rect x="85" y="190" width="110" height="10" rx="2" fill="url(#webDevGradient)" opacity="0.7"/>
+                                    </svg>
 
                                 </div>
                                 <div className="service-info" data-aos="fade-up">
@@ -104,7 +122,22 @@ export default function Home() {
                             <div className="service-headline">Web Design</div>
                             <div className="service-description reverse">
                                 <div data-aos="fade-up">
-                                    <img src={webDesignService} alt="Web Designer Image" />
+                                    <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="designGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style={{stopColor: '#4e54c8'}} />
+                                                <stop offset="100%" style={{stopColor: '#8f94fb'}} />
+                                            </linearGradient>
+                                        </defs>
+                                        <rect x="50" y="50" width="400" height="300" rx="20" fill="url(#designGradient)" opacity="0.1"/>
+                                        <rect x="80" y="80" width="340" height="240" rx="10" fill="url(#designGradient)" opacity="0.8"/>
+                                        <rect x="100" y="100" width="140" height="80" rx="5" fill="url(#designGradient)" opacity="0.6"/>
+                                        <rect x="260" y="100" width="140" height="80" rx="5" fill="url(#designGradient)" opacity="0.4"/>
+                                        <rect x="100" y="200" width="300" height="100" rx="5" fill="url(#designGradient)" opacity="0.2"/>
+                                        <circle cx="120" y="120" r="10" fill="url(#designGradient)" opacity="0.9"/>
+                                        <circle cx="150" y="120" r="10" fill="url(#designGradient)" opacity="0.9"/>
+                                        <circle cx="180" y="120" r="10" fill="url(#designGradient)" opacity="0.9"/>
+                                    </svg>
                                 </div>
                                 <div className="service-info" data-aos="fade-right">
                                     We offer professional web design services to help businesses and individuals create an online presence that is both visually appealing and user-friendly
@@ -115,7 +148,19 @@ export default function Home() {
                             <div className="service-headline">Mobile Developement</div>
                             <div className="service-description">
                                 <div data-aos="fade-right">
-                                    <img src={mobileService} alt="Mobile Developer Image" />
+                                    <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="mobileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style={{stopColor: '#4e54c8'}} />
+                                                <stop offset="100%" style={{stopColor: '#8f94fb'}} />
+                                            </linearGradient>
+                                        </defs>
+                                        <rect x="150" y="50" width="200" height="300" rx="20" fill="url(#mobileGradient)" opacity="0.1"/>
+                                        <rect x="170" y="70" width="160" height="260" rx="10" fill="url(#mobileGradient)" opacity="0.8"/>
+                                        <circle cx="250" cy="290" r="15" fill="url(#mobileGradient)" opacity="0.6"/>
+                                        <rect x="235" y="90" width="30" height="5" rx="2.5" fill="url(#mobileGradient)" opacity="0.4"/>
+                                        <rect x="190" y="120" width="120" height="150" rx="5" fill="url(#mobileGradient)" opacity="0.2"/>
+                                    </svg>
                                 </div>
                                 <div className="service-info" data-aos="fade-up">
                                     If you're in need of high-quality apps for IOS
@@ -131,55 +176,229 @@ export default function Home() {
                         </div>
                         <div className="about-us-description reverse" >
                             <div data-aos="fade-up">
-                                <img src={aboutUs} alt="About Us Image" />
+                                <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="aboutGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style={{stopColor: '#4e54c8'}} />
+                                            <stop offset="100%" style={{stopColor: '#8f94fb'}} />
+                                        </linearGradient>
+                                    </defs>
+                                    <rect x="50" y="50" width="400" height="300" rx="20" fill="url(#aboutGradient)" opacity="0.1"/>
+                                    <circle cx="250" cy="150" r="60" fill="url(#aboutGradient)" opacity="0.8"/>
+                                    <rect x="190" y="240" width="120" height="10" rx="5" fill="url(#aboutGradient)" opacity="0.6"/>
+                                    <rect x="160" y="270" width="180" height="10" rx="5" fill="url(#aboutGradient)" opacity="0.4"/>
+                                    <rect x="130" y="300" width="240" height="10" rx="5" fill="url(#aboutGradient)" opacity="0.2"/>
+                                </svg>
                             </div>
                             <div className="about-us-info" data-aos="fade-right">
-                                At Work Wonders, our team is dedicated to making sure that every client is completely satisfied with the work we do. Whether you're looking for a new website, marketing materials, or any other type of service, we'll work with you to understand your needs and goals, and then create a customized solution that meets your unique requirements.
+                                At Giga Bridge, our team is dedicated to making sure that every client is completely satisfied with the work we do. Whether you're looking for a new website, marketing materials, or any other type of service, we'll work with you to understand your needs and goals, and then create a customized solution that meets your unique requirements.
                             </div>
                         </div>
                     </div>
-                    <div className="contact-us" id='contactus'>
-                        <div className="custom-headline">
-                            Contact Us
+                    <div className="contact-us" id='contactus' style={{
+                        background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                        padding: '3rem',
+                        borderRadius: '20px',
+                        boxShadow: '0 8px 32px rgba(0,0,0,0.1)',
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}>
+                        <div style={{
+                            position: 'absolute',
+                            top: '20px',
+                            right: '20px',
+                            width: '100px',
+                            height: '100px',
+                            background: 'linear-gradient(135deg, #4e54c8, #8f94fb)',
+                            borderRadius: '50%',
+                            opacity: '0.1'
+                        }}></div>
+                        <div className="custom-headline" style={{
+                            fontSize: '2.5rem',
+                            fontWeight: 'bold',
+                            marginBottom: '2rem',
+                            background: 'linear-gradient(135deg, #4e54c8, #8f94fb)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            textAlign: 'center'
+                        }}>
+                            Get In Touch With Us
                         </div>
-                        <div className="contact-us-description reverse">
-                            <div data-aos="fade-up">
-                                <img src={contactUs} alt="Contact Us Image" />
+                        <div className="contact-us-description reverse" style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '2rem'
+                        }}>
+                            <div data-aos="fade-up" style={{flex: 1}}>
+                                <img src={contactUs} alt="Contact Us Image" style={{
+                                    width: '100%',
+                                    borderRadius: '15px',
+                                    boxShadow: '0 4px 16px rgba(0,0,0,0.1)',
+                                    transition: 'transform 0.3s ease',
+                                    cursor: 'pointer'
+                                }} onMouseOver={e => e.target.style.transform = 'scale(1.02)'} 
+                                   onMouseOut={e => e.target.style.transform = 'scale(1)'} />
                             </div>
-                            <div data-aos="fade-right">
-                                <form onSubmit={e => handleSubmit(e)}>
-                                    <div className="form-section" >
-                                        <label htmlFor="name">Full Name</label>
-                                        <input type="text" ref={fullName} placeholder='John Doe' name="name" id="name" />
+                            <div data-aos="fade-right" style={{flex: 1}}>
+                                <form onSubmit={e => handleSubmit(e)} style={{
+                                    background: 'white',
+                                    padding: '2rem',
+                                    borderRadius: '15px',
+                                    boxShadow: '0 4px 16px rgba(0,0,0,0.05)'
+                                }}>
+                                    <div className="form-section" style={{marginBottom: '1.5rem'}}>
+                                        <label htmlFor="name" style={{
+                                            display: 'block',
+                                            fontSize: '1.1rem',
+                                            fontWeight: '600',
+                                            color: '#4e54c8',
+                                            marginBottom: '0.5rem'
+                                        }}>Full Name</label>
+                                        <input type="text" ref={fullName} placeholder='John Doe' name="name" id="name" style={{
+                                            width: '90%',
+                                            padding: '12px 15px',
+                                            border: '2px solid #4e54c8',
+                                            borderRadius: '8px',
+                                            fontSize: '1rem',
+                                            transition: 'all 0.3s ease',
+                                            backgroundColor: '#f8f9fa',
+                                            color: '#4e54c8',
+                                            boxSizing: 'border-box',
+                                            outline: 'none',
+                                            '::placeholder': {
+                                                color: '#4e54c8'
+                                            }
+                                        }} onFocus={e => {
+                                            e.target.style.boxShadow = '0 0 0 3px rgba(78, 84, 200, 0.2)';
+                                            e.target.style.borderColor = '#8f94fb';
+                                        }} 
+                                           onBlur={e => {
+                                            e.target.style.boxShadow = 'none';
+                                            e.target.style.borderColor = '#4e54c8';
+                                        }} />
                                     </div>
-                                    <div className="form-section">
-                                        <label htmlFor="email">Email</label>
-                                        <input type="text" ref={email} placeholder='johndoe@gmail.com' name="email" id="email" />
+                                    <div className="form-section" style={{marginBottom: '1.5rem'}}>
+                                        <label htmlFor="email" style={{
+                                            display: 'block',
+                                            fontSize: '1.1rem',
+                                            fontWeight: '600',
+                                            color: '#4e54c8',
+                                            marginBottom: '0.5rem'
+                                        }}>Email</label>
+                                        <input type="text" ref={email} placeholder='johndoe@gmail.com' name="email" id="email" style={{
+                                            width: '90%',
+                                            padding: '12px 15px',
+                                            border: '2px solid #4e54c8',
+                                            borderRadius: '8px',
+                                            fontSize: '1rem',
+                                            transition: 'all 0.3s ease',
+                                            backgroundColor: '#f8f9fa',
+                                            color: '#4e54c8',
+                                            boxSizing: 'border-box',
+                                            outline: 'none',
+                                            '::placeholder': {
+                                                color: '#4e54c8'
+                                            }
+                                        }} onFocus={e => {
+                                            e.target.style.boxShadow = '0 0 0 3px rgba(78, 84, 200, 0.2)';
+                                            e.target.style.borderColor = '#8f94fb';
+                                        }} 
+                                           onBlur={e => {
+                                            e.target.style.boxShadow = 'none';
+                                            e.target.style.borderColor = '#4e54c8';
+                                        }} />
                                     </div>
-                                    <div className="form-section">
-                                        <label htmlFor="message">Message</label>
-                                        <textarea name="message" ref={message} maxLength={255} id="message" placeholder="Enter Your Message">
+                                    <div className="form-section" style={{marginBottom: '1.5rem'}}>
+                                        <label htmlFor="message" style={{
+                                            display: 'block',
+                                            fontSize: '1.1rem',
+                                            fontWeight: '600',
+                                            color: '#4e54c8',
+                                            marginBottom: '0.5rem'
+                                        }}>Message</label>
+                                        <textarea name="message" ref={message} maxLength={255} id="message" placeholder="Enter Your Message" style={{
+                                            width: '90%',
+                                            padding: '12px 15px',
+                                            border: '2px solid #4e54c8',
+                                            borderRadius: '8px',
+                                            fontSize: '1rem',
+                                            minHeight: '120px',
+                                            resize: 'vertical',
+                                            transition: 'all 0.3s ease',
+                                            backgroundColor: '#f8f9fa',
+                                            color: '#4e54c8',
+                                            boxSizing: 'border-box',
+                                            outline: 'none',
+                                            '::placeholder': {
+                                                color: '#4e54c8'
+                                            }
+                                        }} onFocus={e => {
+                                            e.target.style.boxShadow = '0 0 0 3px rgba(78, 84, 200, 0.2)';
+                                            e.target.style.borderColor = '#8f94fb';
+                                        }} 
+                                           onBlur={e => {
+                                            e.target.style.boxShadow = 'none';
+                                            e.target.style.borderColor = '#4e54c8';
+                                        }}>
                                         </textarea>
                                     </div>
-                                    <button>Send</button>
+                                    <button style={{
+                                        width: '90%',
+                                        padding: '12px 30px',
+                                        background: 'linear-gradient(135deg, #4e54c8, #8f94fb)',
+                                        color: 'white',
+                                        border: 'none',
+                                        borderRadius: '25px',
+                                        fontSize: '1.1rem',
+                                        fontWeight: '600',
+                                        cursor: 'pointer',
+                                        transition: 'all 0.3s ease',
+                                        boxShadow: '0 4px 15px rgba(78, 84, 200, 0.2)'
+                                    }} onMouseOver={e => {
+                                        e.target.style.transform = 'translateY(-2px)';
+                                        e.target.style.boxShadow = '0 6px 20px rgba(78, 84, 200, 0.3)';
+                                    }}
+                                       onMouseOut={e => {
+                                        e.target.style.transform = 'translateY(0)';
+                                        e.target.style.boxShadow = '0 4px 15px rgba(78, 84, 200, 0.2)';
+                                    }}>
+                                        Send Message
+                                    </button>
                                 </form>
                             </div>
                         </div>
-
                     </div>
                 </section>
 
             </div>
             <footer>
-                <div className="footer-head">
-                    WorkWonders
+                <div className="footer-head" style={{
+                    fontSize: '3rem',
+                    fontWeight: '700',
+                    background: 'linear-gradient(135deg, #ffffff, #f0f0f0)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
+                    letterSpacing: '2px',
+                    marginBottom: '2rem'
+                }}>
+                    GigaBridge
                 </div>
-                <p className="footer-body">
-                    Work Wonders is a leading provider of freelance services, connecting talented individuals with clients who need their skills and expertise. From website design and development to writing and marketing, our team has the knowledge and experience to help you succeed.
+                <p className="footer-body" style={{
+                    maxWidth: '800px',
+                    lineHeight: '1.8',
+                    fontSize: '1.2rem',
+                    color: 'rgba(255,255,255,0.9)',
+                    textAlign: 'center',
+                    padding: '0 2rem',
+                    marginBottom: '3rem',
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.1)'
+                }}>
+                    Connecting talented freelancers with clients through expert web development, design, and marketing services.
                 </p>
                 <div className="footer-footer">
                     <div className="copyright">
-                        Copyright Work Wonders ©2023 | All Rights Reserved
+                        Copyright Giga Bridge ©2023 | All Rights Reserved
                     </div>
                     <div className="socials">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
