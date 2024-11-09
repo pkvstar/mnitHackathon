@@ -7,7 +7,7 @@ import PageNotFound from "./components/PageNotFound";
 import Signup from "./components/Signup";
 import Chat from "./components/Chat";
 import Profile from "./components/Profile";
-
+import Quiz from "./components/Quiz";
 import FreelancerDashboard from "./components/FreelancerComponents/FreelancerDashboard";
 import FreelancerServices from "./components/FreelancerComponents/FreelancerServices";
 import FreelancerCreateService from "./components/FreelancerComponents/FreelancerCreateService";
@@ -52,6 +52,10 @@ function App() {
             <Route
               path="/dashboard/freelancer/:id/chat"
               element={<Chat type="freelancer" />}
+            />
+            <Route
+              path="/dashboard/freelancer/:id/quiz"
+              element={<Quiz />}
             />
             <Route
               path="/dashboard/freelancer/:id/profile"

@@ -4,7 +4,7 @@ import orders from '../../assets/svgs/servicesIcon.svg'
 import FreelancerMenu from './FreelancerMenu';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { tokenExists } from '../../Redux/UserSlice'
 import { myDashboard } from '../../Redux/FreelancerSlice'
 import { toast } from 'react-toastify';
@@ -12,6 +12,7 @@ import Loading from './../Loading';
 import TestimonialSlider from '../TestimonialsSlider'
 
 export default function FreelancerDashboard() {
+    const location = useLocation();
     const { token } = useSelector(state => state.user)
     const { data } = useSelector(state => state.freelancer)
     const { id } = useParams()
@@ -20,8 +21,13 @@ export default function FreelancerDashboard() {
     const dispatch = useDispatch()
     const [order, setOrder] = useState(0);
     const [complete, setComplete] = useState(0);
+    const [verify, setVerify] = useState(false);
 
     useEffect(() => {
+        if (location.state?.score > 50) {
+            setVerify(true);
+        }
+
         tokenExists(token, navigate, dispatch).then(data => (data === false || JSON.parse(localStorage.getItem('userInfo')).role !== "freelancer" || JSON.parse(localStorage.getItem('userInfo'))._id !== id) && navigate("/login"))
 
         dispatch(myDashboard()).unwrap().then(data => {
@@ -45,7 +51,7 @@ export default function FreelancerDashboard() {
                 toast.error(rejectedValueOrSerializedError)
             }, 1000);
         });
-    }, []);
+    }, [location.state?.score]);
 
     const totalPendingPayment = (order - complete) * 70;
 
@@ -60,6 +66,48 @@ export default function FreelancerDashboard() {
                                 <div className="header">
                                     Welcome Back {data?.dashboard?.username}
                                 </div>
+                                {verify ? (
+                                    <div className="verified">
+                                        <svg 
+                                            width="24" 
+                                            height="24" 
+                                            viewBox="0 0 24 24"
+                                            style={{marginRight: '8px', verticalAlign: 'middle'}}
+                                        >
+                                            <path
+                                                fill="#4CAF50"
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                                            />
+                                        </svg>
+                                        Verified Freelancer
+                                    </div>
+                                ) : (
+                                    <button 
+                                        onClick={() => navigate('/dashboard/freelancer/' + id + '/quiz')}
+                                        style={{
+                                            padding: '12px 24px',
+                                            border: 'none',
+                                            borderRadius: '6px',
+                                            backgroundColor: '#feab5e',
+                                            color: 'white',
+                                            cursor: 'pointer',
+                                            transition: 'background-color 0.3s, transform 0.2s',
+                                            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                                            fontSize: '16px',
+                                            fontWeight: 'bold'
+                                        }}
+                                        onMouseOver={(e) => {
+                                            e.target.style.backgroundColor = '#fe9945';
+                                            e.target.style.transform = 'scale(1.02)';
+                                        }}
+                                        onMouseOut={(e) => {
+                                            e.target.style.backgroundColor = '#feab5e';
+                                            e.target.style.transform = 'scale(1)';
+                                        }}
+                                    >
+                                        Verify Account
+                                    </button>
+                                )}
                                 <div className="stats">
                                     <div className="card">
                                         <div className="info">
