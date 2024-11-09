@@ -32,7 +32,7 @@ Designed with an intuitive interface, users can quickly create boards, join disc
   <img src="https://github.com/pkvstar/images/blob/main/images/Screenshot%202024-11-09%20084903.png?raw=true" height="300px">
   <p>Personalized dashboard for freelancers</p>
 </div>
-<div>
+<div align="center" style={display:"flex"; flex-direction:"column"; margin-bottom:"2rem"}>
   <img src="https://github.com/pkvstar/images/blob/main/images/Screenshot%202024-11-09%20085640.png?raw=true" height="300px">
   <p>Personalized dashboard for client</p>
 </div>
