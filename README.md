@@ -1,28 +1,48 @@
-# 🚀 Work Wonders
+# GigaBridge
+Giga Bridge is a dedicated platform for gig and freelance workers in India, prioritizing a secure and dependable payment system to ensure fair compensation for all completed work. We understand that freelancers face various challenges in securing payments, and our platform aims to bridge this gap by fostering trust and transparency in every transaction. Giga Bridge stands as a solution-driven network where freelancers and gig workers can connect confidently with project providers, knowing their efforts will be financially recognized.
 
-## 💻 Description
+## Key Features
+ - Payment Security - Guaranteed payments for all verified work to promote fair compensation.
+ - Real-Time Communication - Enables freelancers and clients to connect instantly, discuss project details, and stay aligned on progress for smoother collaboration and timely delivery.
+ - Automated Skill Assessments - Uses AI to evaluate freelancers’ technical and creative skills through customizable tests relevant to each job category.
+   
+### Stream Creation:
+Users can create game streams and broadcast their gameplay to viewers around the world.
 
-This platform is a website that connects freelancers and clients. It has a homepage with general information, and users can register as either a freelancer or a client. Freelancers can create, update, and delete services, view statistics, and receive testimonials from previous clients. Clients can view services offered by freelancers, request services, and view their order status and expenses. Both types of users have their own dashboard, profile, and chatroom to communicate with each other instantly.
+### Interactive Features:
+Real-time viewer interaction, including live chat and on-stream reactions.
 
-## 🎥 Video Demo
+### User-Friendly Interface:
+Designed with an intuitive interface, users can quickly create boards, join discussions, and manage tasks without a steep learning curve.
 
-[![Work Wonders - Freelance Website App](https://github.com/tarikbouchaala/Work-Wonders/raw/main/client/src/assets/Images/Miniature.png)](https://www.youtube.com/watch?v=YRXQsYHNx9Y)
+## Tech Stack
+1. **ReactJS** for frontend and backend part.
+2. **MongoDB** as database
+3. **Socket.io** for Realtime chatting.
+4. **JWT** for authentication.
+5. **Redux** for state management.
+6. **NODEJS** for backend.
 
-Click the image above to watch the video demo of Work Wonders and get a visual walkthrough of the app's features and functionalities.
+## Some Snapshots
+<div align="center" style={display:"flex"; flex-direction:"column"; margin-bottom:"2rem"}>
+  <img src="https://github.com/pkvstar/images/blob/main/images/Screenshot%202024-11-09%20084536.png?raw=true" height="300px">
+  <p>Dashboard</p>
+</div>
+<div align="center" style={display:"flex"; flex-direction:"column"; margin-bottom:"2rem"}>
+  <img src="https://github.com/tarunchaudhary1/gamerLink/blob/master/public/streamer_side.png?raw=true" height="300px">
+  <p>Streamer side while streaming</p>
+</div>
+<div align="center" style={display:"flex"; flex-direction:"column"; margin-bottom:"2rem"}>
+  <img src="https://github.com/tarunchaudhary1/gamerLink/blob/master/public/viewer_side.png?raw=true" height="300px">
+  <p>User side while watching</p>
+</div>
 
-## 🛠️ Technologies Used
-
-- MongoDB
-- Express
-- React
-- Node.js
-- Socket.io
-
-## 📋 Prerequisites
-
-Before you begin, ensure you have the following:
-
-1. Install Node.js
+## How to run it locally
+- Clone the repository.
+- Open your favourite editor.
+- Go to terminal and do npm install to install dependencies.
+- Get your livekit api keys, Uploadthing token and postgreSQL database url.
+- After that use command npm run dev to start the application.
 2. Install MongoDB
 
 ## 🔧 How to Use
