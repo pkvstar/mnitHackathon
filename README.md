@@ -26,16 +26,24 @@ Designed with an intuitive interface, users can quickly create boards, join disc
 ## Some Snapshots
 <div align="center" style={display:"flex"; flex-direction:"column"; margin-bottom:"2rem"}>
   <img src="https://github.com/pkvstar/images/blob/main/images/Screenshot%202024-11-09%20084536.png?raw=true" height="300px">
-  <p>Dashboard</p>
+  <p>Landing Page</p>
 </div>
 <div align="center" style={display:"flex"; flex-direction:"column"; margin-bottom:"2rem"}>
-  <img src="https://github.com/tarunchaudhary1/gamerLink/blob/master/public/streamer_side.png?raw=true" height="300px">
-  <p>Streamer side while streaming</p>
+  <img src="https://github.com/pkvstar/images/blob/main/images/Screenshot%202024-11-09%20084903.png?raw=true" height="300px">
+  <p>Personalized dashboard for freelancers</p>
+</div>
+  <img src="https://github.com/pkvstar/images/blob/main/images/Screenshot%202024-11-09%20085640.png?raw=true" height="300px">
+  <p>Personalized dashboard for client</p>
 </div>
 <div align="center" style={display:"flex"; flex-direction:"column"; margin-bottom:"2rem"}>
-  <img src="https://github.com/tarunchaudhary1/gamerLink/blob/master/public/viewer_side.png?raw=true" height="300px">
-  <p>User side while watching</p>
+  <img src="https://github.com/pkvstar/images/blob/main/images/Screenshot%202024-11-09%20084939.png?raw=true" height="300px">
+  <p>Last Orders Dashboard</p>
 </div>
+<div align="center" style={display:"flex"; flex-direction:"column"; margin-bottom:"2rem"}>
+  <img src="https://github.com/pkvstar/images/blob/main/images/Screenshot%202024-11-09%20085442.png?raw=true" height="300px">
+  <p>Chatting Facility</p>
+</div>
+
 
 ## How to run it locally
 - Clone the repository.
